@@ -41,7 +41,7 @@ function password(obj) {
     obj.name === undefined ||
     obj.birthYear === undefined ||
     obj.siteName === undefined ||
-    !(obj.birthYear >= 1000)
+    !(obj.birthYear >= 1000 && obj.birthYear <= 9999)
   ) {
     return 'Invalid';
   }
